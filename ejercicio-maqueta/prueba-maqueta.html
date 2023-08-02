@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maqueta HTML Responsiva</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logos">
+            <img src="img/logo-sochi-color.png" alt="Logo Sochi">
+            <img src="img/logo-claro-sports.png" alt="Logo Claro Sports">
+        </div>
+    </header>
+
+    <section class="principal">
+        <div class="textoContador">Faltan</div> 
+        <div id="countdown">
+            <div class="circle">
+                <p id="days"></p>
+                <div>Días</div>
+            </div>
+            <div class="circle">
+                <p id="hours"></p>
+                <div>Hrs</div>
+            </div>
+            <div class="circle">
+                <p id="minutes"></p>
+                <div>Min</div>
+            </div>
+            <div class="circle">
+                <p id="seconds"></p>
+                <div>Seg</div>
+            </div>
+        </div>
+        <div class="video-container">
+            <iframe id="youtube-player" width="560" height="315" src="https://www.youtube.com/embed/mAinJyxqrBY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section class="secundario">
+        <div class="textoImages">Claro Sports en Sochi 2014</div>
+        <div class="link-images">
+            <div class="image-section" onclick="changeVideo('https://www.youtube.com/embed/mAinJyxqrBY')">
+                <img src="img/team-latam.png" alt="Team Latam" id="Team Latam">
+                <div>Team Latam</div>
+            </div>
+        
+            <div class="image-section" onclick="changeVideo('https://www.youtube.com/embed/gVUs4oFKJmY')">
+                <img src="img/travel-meets-fashion.png" alt="Travel Meets Fashion" id="Travel Meets Fashion">
+                <div>Travel Meets Fashion</div>
+            </div>
+        
+            <div class="image-section" onclick="changeVideo('https://www.youtube.com/embed/aQLDxUY_wjs')">
+                <img src="img/velocidad-riesgo.png" alt="Velocidad y riesgo" id="Velocidad y riesgo">
+                <div>Velocidad y riesgo</div>
+            </div>
+        
+            <div class="image-section" onclick="changeVideo('https://www.youtube.com/embed/qBe17SnzI2s')">
+                <img src="img/experiencia.png" alt="Experiencia multimedia" id="Experiencia multimedia">
+                <div>Experiencia multimedia</div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="column aviso">
+            <a href="#">Aviso de privacidad</a> | <a href="#">Contacto</a>
+        </div>
+        <div class="column logo-footer">
+            <img src="img/logo-sochi.png" alt="Logo Footer">
+        </div>
+        <div class="column redes-sociales">
+            <img src="img/mobli-icon.png" alt="Redes Sociales">
+            <img src="img/mobli-icon.png" alt="Redes Sociales">
+            <img src="img/mobli-icon.png" alt="Redes Sociales">
+            <img src="img/mobli-icon.png" alt="Redes Sociales">
+            
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
